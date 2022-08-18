@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <script>
+        function pass(number) {
+            let f;
+            {
+                if (number == 1 || number == 0)
+                    return 1;
+                else
+                    f = number * pass(number - 1);
+                return f;
+
+            }
+        }
+
+
+        let a, factorial;
+        a = parseInt(a);
+        a = prompt("Enter the number of you want the factorial=>");
+        factorial = pass(a);
+        document.writeln("The factorail of the nuber is = ", factorial);
+    </script>
+</body>
+
+</html>
